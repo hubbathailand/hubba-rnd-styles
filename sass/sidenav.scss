@@ -1,0 +1,43 @@
+
+/* .md-sidenav-left a[ui-sref="app.calendar"], */
+.md-sidenav-left a[ui-sref="app.meeting-room"],
+.md-sidenav-left a[ui-sref="app.membership"] {
+ display: none;
+}
+
+.md-sidenav-left {
+  box-shadow: none;
+}
+
+md-sidenav .md-toolbar-tools button {
+    display:none
+}
+
+
+
+md-sidenav md-toolbar .md-toolbar-tools  {
+    display: flex;
+    justify-content: center;
+   }
+
+md-sidenav  > md-divider {
+border: 1px solid red;
+display:none;
+   }
+
+md-toolbar {
+    border-bottom: 1px solid #aaa;
+box-shadow:none;
+}
+
+.md-whiteframe-2dp {
+  box-shadow:none;
+}
+
+md-sidenav .sidenav-footer {
+    display:none;
+}
+
+md-sidenav md-content  {
+   margin-top: 40px;
+}

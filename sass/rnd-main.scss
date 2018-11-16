@@ -1,0 +1,49 @@
+.rnd-container > div .checkbox {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+}
+
+.rnd-container > div .checkbox input {
+  display: none;
+}
+
+.rnd-container > div .checkbox label {
+  margin-left: 0;
+  padding-left: 0;
+  color: #FF850B;
+}
+
+.rnd-container > div .checkbox label::before {
+ font-size: 14px;
+ content: "or ";
+color: #1C1C1C;
+}
+
+input {
+  border-radius: 9px !important;
+}
+
+.page-background {
+
+    background-color: white;
+    background-image:none !important;
+}
+
+.page-overlay {
+background-color: white;
+}
+
+.md-raised {
+ border-radius: 9px;
+}
+
+.md-raised:hover {
+    background-color:#FF850B;
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+@keyframes example {
+    to {background:  linear-gradient(to right, #f06625, #f99e2d);}
+}
