@@ -8,22 +8,34 @@
   box-shadow: none;
 }
 
-md-sidenav .md-toolbar-tools button {
-  display: none;
-}
-
-md-sidenav md-toolbar .md-toolbar-tools {
-  display: flex;
-  justify-content: center;
-}
-
-md-sidenav > md-divider {
-  display: none;
+md-sidenav {
+  .md-toolbar-tools {
+    button {
+      display: none;
+    }
+  }
+  md-toolbar {
+    .md-toolbar-tools {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  > md-divider {
+    display: none;
+  }
 }
 
 md-toolbar {
   border-bottom: 1px solid #aaa;
   box-shadow: none;
+  .main-searchbox-container {
+    display: none;
+  }
+  span {
+    span {
+      display: none;
+    }
+  }
 }
 
 .md-whiteframe-2dp {

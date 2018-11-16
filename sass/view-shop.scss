@@ -1,15 +1,18 @@
-.view-shop .shop-items .material-info-card .rnd-item-picture {
-  display: none;
-}
-
-.view-shop .shop-items .material-info-card {
-  border-radius: 9px;
-  border: 1px solid #b6b6b6;
-  box-shadow: none;
-}
-
-.view-shop .shop-items .shop-item__footer {
-  border-top: none;
+@import "./variables.scss";
+.view-shop {
+  .shop-items {
+    .material-info-card {
+      border-radius: 9px;
+      border: none;
+      box-shadow: none;
+      .rnd-item-picture {
+        display: none;
+      }
+    }
+    .shop-item__footer {
+      border-top: none;
+    }
+  }
 }
 
 .plans-table + div {

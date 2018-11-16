@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   padding: 0px 35px;
-  border-right: 1px solid #979797;
+  border-right: 1px solid $borderColor;
 }
 
 .user-signin .rnd-container form {
@@ -85,7 +85,7 @@
 .user-signin .login-footer .pull-right a::after {
   visibility: visible;
   position: absolute;
-  top: 0;
+  top: -2px;
   left: 0;
   content: " join our community";
   white-space: nowrap;
@@ -103,4 +103,20 @@ button {
 .user-signin validation-errors {
   white-space: nowrap;
   margin-left: 40px;
+}
+
+//
+.user-signup {
+  form[name="accountDetailsForm"] {
+    > div > div .form-group label::after {
+      content: " *";
+      color: $errorColor;
+    }
+    .form-group:nth-child(5) {
+      display: none;
+    }
+    small {
+      display: none;
+    }
+  }
 }

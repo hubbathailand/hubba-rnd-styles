@@ -19,7 +19,7 @@
 .rnd-container > div .checkbox label::before {
   font-size: 14px;
   content: "or ";
-  color: #1c1c1c;
+  color: $mainFontColor;
 }
 
 input {
