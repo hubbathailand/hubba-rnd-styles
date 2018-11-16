@@ -93,7 +93,7 @@ color: #1C1C1C;
 /* .md-sidenav-left a[ui-sref="app.calendar"], */
 .md-sidenav-left a[ui-sref="app.meeting-room"],
 .md-sidenav-left a[ui-sref="app.membership"] {
- display: none;   
+ display: none;
 }
 
 .md-sidenav-left {
@@ -106,12 +106,12 @@ md-sidenav .md-toolbar-tools button {
 
 
 
-md-sidenav md-toolbar .md-toolbar-tools  { 
+md-sidenav md-toolbar .md-toolbar-tools  {
     display: flex;
     justify-content: center;
    }
 
-md-sidenav  > md-divider { 
+md-sidenav  > md-divider {
 border: 1px solid red;
 display:none;
    }
@@ -126,10 +126,10 @@ box-shadow:none;
 }
 
 md-sidenav .sidenav-footer {
-    display:none;   
+    display:none;
 }
 
-md-sidenav md-content  { 
+md-sidenav md-content  {
    margin-top: 40px;
 }
 
@@ -173,11 +173,11 @@ md-toolbar .side-padding .toolbar-icon  {
    .user-signin .rnd-container .signup-header img{
       width: 200px;
     }
- 
+
     .user-signin .rnd-container .signup-header h2{
       display: none;
     }
-    
+
   .user-signin .rnd-container .signup-header {
      display: flex;
      align-items: center;
@@ -202,7 +202,7 @@ width: 100%
 }
 
 .user-signin form > div:first-child .form-group > div {
-    width: 100%;    
+    width: 100%;
  }
 
 .user-signin .login-footer {
@@ -248,7 +248,7 @@ transform: translateY(-50%);
 }
 
 .user-signin .language-selector {
-  
+
         display: none;
     }
 
@@ -258,9 +258,9 @@ transform: translateY(-50%);
         visibility: hidden;
         position: relative;
     }
-    
+
 .user-signin .login-footer .pull-right a::after {
-    
+
        visibility: visible;
            position: absolute;
 	top: 0;
@@ -283,7 +283,7 @@ font-size: 14px;
 }
 
 .page-background {
-   
+
     background-color: white;
     background-image:none !important;
 }
@@ -294,7 +294,7 @@ background-color: white;
 
 
 .user-signup .container .shop-items-col .form-container .mb0 > div .plans-table .rnd-shop-item .rnd-item-picture {
-  
+
     display:none;
 }
 
@@ -322,7 +322,7 @@ border-radius: 9px;
 }
 
 .locations-filter label {
-    display:none;    
+    display:none;
 }
 
 locations-filter .k-input {
@@ -365,15 +365,15 @@ locations-filter .k-select {
 }
 
 .user-signup-plans a {
-     color:#FF850B !important; 
+     color:#FF850B !important;
 }
 
 .user-signup a {
- color:#FF850B !important; 
+ color:#FF850B !important;
 }
 
 .user-signup .login-footer .pull-right a {
-    color:#FF850B !important;    
+    color:#FF850B !important;
 }
 
 
@@ -386,7 +386,7 @@ locations-filter .k-select {
     animation-duration: 1s;
 }
 
-    
+
 @keyframes example {
     to {background:  linear-gradient(to right, #f06625, #f99e2d);}
 }
@@ -395,10 +395,10 @@ locations-filter .k-select {
     background-color: white;
 }
 
-.user-signup-plans .login-footer .language-selector  { 
+.user-signup-plans .login-footer .language-selector  {
 display:none;
 }
-.user-signup-plans .login-footer a  { 
+.user-signup-plans .login-footer a  {
 color: #FF850B;
 }
 
@@ -416,18 +416,18 @@ color: #FF850B;
     background-color: #FF850B;
 }
 
-.view-shop .shop-items .material-info-card .rnd-item-picture {  
+.view-shop .shop-items .material-info-card .rnd-item-picture {
     display: none;
 }
 
-.view-shop .shop-items .material-info-card  {  
+.view-shop .shop-items .material-info-card  {
     border-radius: 9px;
     border: 1px solid #b6b6b6;
     box-shadow:none;
 }
 
-.view-shop .shop-items .shop-item__footer  {  
- 
+.view-shop .shop-items .shop-item__footer  {
+
     border-top: none;
-   
+
 }
