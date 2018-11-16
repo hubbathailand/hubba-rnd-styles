@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 .rnd-container > div .checkbox {
   margin-top: 0;
   margin-bottom: 0;
@@ -25,8 +27,7 @@ input {
 }
 
 .page-background {
-
-    background-color: white;
+    background-color: $mainColor;
     background-image:none !important;
 }
 

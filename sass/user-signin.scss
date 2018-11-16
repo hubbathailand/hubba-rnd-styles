@@ -1,0 +1,111 @@
+.user-signin .rnd-container {
+    display:flex;
+  }
+
+.user-signin .form-container {
+
+    box-shadow: none;
+    }
+   .user-signin .rnd-container .signup-header img{
+      width: 200px;
+    }
+
+    .user-signin .rnd-container .signup-header h2{
+      display: none;
+    }
+
+  .user-signin .rnd-container .signup-header {
+     display: flex;
+     align-items: center;
+     padding:0px 35px;
+     border-right: 1px solid #979797;
+  }
+
+.user-signin .rnd-container form {
+width: 100%
+}
+
+.user-signin .rnd-container form::before {
+    content: "Hi, welcome to HUBBA.";
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.user-signin .rnd-container form label {
+    display: none;
+}
+
+.user-signin form > div:first-child .form-group > div {
+    width: 100%;
+ }
+
+.user-signin .login-footer {
+    background-color: white;
+    border: none;
+    }
+.user-signin a {
+    color: #FF850B;
+font-size: 14px;
+    }
+
+.user-signin .login-footer .pull-right {
+    position: absolute;
+    top: 310px;
+    right: 130px;
+}
+
+.user-signin .login-footer .pull-right span {
+display:none;
+}
+
+
+
+
+.user-signin form a.inline {
+    position: absolute;
+    bottom: -85px;
+    right: 70px;
+}
+
+.user-signin .container {
+    position: relative;
+top: 50%;
+transform: translateY(-50%);
+}
+
+.user-signin .language-selector {
+
+        display: none;
+    }
+
+
+.user-signin .login-footer .pull-right a {
+        border: 1px solid red;
+        visibility: hidden;
+        position: relative;
+    }
+
+.user-signin .login-footer .pull-right a::after {
+
+       visibility: visible;
+           position: absolute;
+	top: 0;
+	left: 0;
+	content: " join our community";
+    white-space: nowrap;
+font-size: 14px;
+    }
+
+.user-signin input,button {
+    border-radius: 9px;
+    }
+.user-signin button {
+    border-radius: 9px;
+    }
+
+.user-signin validation-errors {
+    white-space: nowrap;
+   margin-left: 40px;
+}

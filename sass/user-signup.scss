@@ -1,0 +1,127 @@
+.user-signup .material-info-card {
+ /*pointer-events:none;*/
+}
+
+.user-signup .plans-table > div:nth-child(8) .shop-item__footer {
+    display:none;
+}
+
+.user-signup .plans-table > div:nth-child(8) > div {
+    position: relative;
+
+}
+
+.user-signup .plans-table > div:nth-child(8) > div .external-link i {
+   position: absolute;
+   bottom: -280px;
+   right:70px;
+   font-size: 30px;
+   pointer-events: initial;
+}
+
+.user-signup .plans-table > div:nth-child(8) > div .external-link:after {
+    content: "Contact us";
+    font-size: 12px;
+   white-space: nowrap;
+   position: absolute;
+   bottom: -275px;
+   right:0px;
+}
+
+.user-signup .material-info-card button {
+   /*pointer-events:initial;*/
+}
+
+.user-signup-plans .signup-header-wrp .btn-group button {
+  border:none;
+}
+
+.user-signup-plans .signup-header-wrp  {
+  border-bottom:none;
+}
+
+.user-signup .signup-header-wrp .wizzard-tabs .btn-group button  {
+    border:none;
+}
+
+.user-signup .signup-header-wrp   {
+    border-bottom: none !important;
+}
+
+
+.user-signup .container .shop-items-col .form-container .mb0 > div .plans-table .rnd-shop-item .rnd-item-picture {
+
+    display:none;
+}
+
+.user-signup .container .shop-items-col .form-container .mb0 > div .rnd-shop-item > div > .shop-item__description {
+
+    margin: 20px 0px 45px;
+}
+
+.user-signup .container .shop-items-col .form-container .mb0 > div .plans-table .rnd-shop-item {
+border-radius: 9px;
+   border: 1px solid #B6B6B6;
+   box-shadow: none;
+}
+
+.user-signup .container .shop-items-col .form-container .mb0 > div .plans-table .rnd-shop-item .shop-item__content > .shop-item__footer {
+   border: none;
+}
+
+
+.user-signup .k-list-filter input {
+        display:none;
+}
+
+.user-signup .k-list-filter span {
+        display:none;
+}
+
+.user-signup .login-footer .language-selector {
+    display:none;
+}
+
+.user-signup .login-footer  {
+   background-color: white;
+}
+
+.user-signup .login-footer .pull-right a  {
+   color: #FF850B;
+}
+
+.user-signup .login-footer .language-selector {
+    display:none;
+}
+
+.user-signup .login-footer  {
+   background-color: white;
+}
+
+.user-signup-plans a {
+     color:#FF850B !important;
+}
+
+.user-signup a {
+ color:#FF850B !important;
+}
+
+.user-signup .login-footer .pull-right a {
+    color:#FF850B !important;
+}
+
+.user-signup-plans .login-footer {
+    background-color: white;
+}
+
+.user-signup-plans .login-footer .language-selector  {
+  display:none;
+}
+
+.user-signup-plans .login-footer a  {
+  color: #FF850B;
+}
+
+.user-signup .k-list-container .k-state-focused {
+    background-color: #FF850B;
+}
