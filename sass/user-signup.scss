@@ -20,13 +20,27 @@
   pointer-events: initial;
 }
 
-.user-signup .plans-table > div:nth-child(8) > div .external-link:after {
-  content: "Contact Us";
-  font-size: 12px;
-  white-space: nowrap;
-  position: absolute;
-  bottom: -275px;
-  right: 0px;
+.user-signup .plans-table > div:nth-child(8) {
+  > div .external-link {
+    i {
+      display: none;
+    }
+    &:after {
+      content: "Inquiry";
+      font-size: 14px;
+      white-space: nowrap;
+      position: absolute;
+      bottom: -275px;
+      right: 35px !important;
+      margin: auto;
+      width: 100px;
+      height: 30px;
+      background: $mainColor;
+      color: white;
+      text-align: center;
+      line-height: 29px;
+    }
+  }
 }
 
 .user-signup .material-info-card button {
