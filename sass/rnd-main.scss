@@ -23,7 +23,7 @@
 }
 
 input {
-  border-radius: 9px !important;
+  border-radius: $mainRadius !important;
 }
 
 .page-background {
@@ -36,7 +36,7 @@ input {
 }
 
 .md-raised {
-  border-radius: 9px;
+  border-radius: $mainRadius;
 }
 
 .md-raised:hover {

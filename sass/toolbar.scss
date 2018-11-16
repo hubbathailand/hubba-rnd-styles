@@ -21,7 +21,7 @@ md-toolbar .side-padding .toolbar-icon {
 
 .locations-filter {
   border: 1px solid $borderColor;
-  border-radius: 9px;
+  border-radius: $mainRadius;
   height: 34px;
   margin-top: 20px;
   padding: 0 !important;

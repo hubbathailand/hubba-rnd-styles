@@ -18,6 +18,11 @@ md-sidenav {
     .md-toolbar-tools {
       display: flex;
       justify-content: center;
+      a {
+        img {
+          max-height: 20px;
+        }
+      }
     }
   }
   > md-divider {

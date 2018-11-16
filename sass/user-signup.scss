@@ -95,7 +95,7 @@
   > div
   .plans-table
   .rnd-shop-item {
-  border-radius: 9px;
+  border-radius: $mainRadius;
   border: 1px solid $borderColor;
   box-shadow: none;
 }

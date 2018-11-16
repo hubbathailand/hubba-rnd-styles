@@ -1,0 +1,22 @@
+@import "./variables.scss";
+.view-shop-plans {
+  md-content {
+    background-color: white;
+    .md-whiteframe-1dp {
+      box-shadow: none;
+    }
+    .categories-toolbar {
+      border: none;
+    }
+    .rnd-shop-item {
+      background-color: white;
+      padding: 20px;
+      border-radius: $mainRadius;
+      margin-left: 10px;
+    }
+  }
+  .order-summary {
+    border: 1px solid $borderColor;
+    border-radius: $mainRadius;
+  }
+}
