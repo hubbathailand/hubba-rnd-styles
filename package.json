@@ -1,0 +1,20 @@
+{
+  "name": "gulp-scss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp-live-server": "0.0.31"
+  }
+}
