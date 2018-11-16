@@ -1,4 +1,4 @@
-@import 'variables.scss';
+@import "./variables.scss";
 
 .rnd-container > div .checkbox {
   margin-top: 0;
@@ -13,13 +13,13 @@
 .rnd-container > div .checkbox label {
   margin-left: 0;
   padding-left: 0;
-  color: #FF850B;
+  color: $mainColor;
 }
 
 .rnd-container > div .checkbox label::before {
- font-size: 14px;
- content: "or ";
-color: #1C1C1C;
+  font-size: 14px;
+  content: "or ";
+  color: #1c1c1c;
 }
 
 input {
@@ -27,24 +27,26 @@ input {
 }
 
 .page-background {
-    background-color: $mainColor;
-    background-image:none !important;
+  background-color: white;
+  background-image: none !important;
 }
 
 .page-overlay {
-background-color: white;
+  background-color: white;
 }
 
 .md-raised {
- border-radius: 9px;
+  border-radius: 9px;
 }
 
 .md-raised:hover {
-    background-color:#FF850B;
-    animation-name: example;
-    animation-duration: 1s;
+  background-color: $mainColor;
+  animation-name: example;
+  animation-duration: 1s;
 }
 
 @keyframes example {
-    to {background:  linear-gradient(to right, #f06625, #f99e2d);}
+  to {
+    background: linear-gradient(to right, $mainColor, #f99e2d);
+  }
 }

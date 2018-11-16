@@ -1,8 +1,9 @@
+@import "./variables.scss";
 
 .order-summary .remove-plan {
-  color: #FF850B;
+  color: $mainColor;
 }
 
-.order-summary .order-summary-content  {
-   border-radius: 9px;
+.order-summary .order-summary-content {
+  border-radius: 9px;
 }

@@ -1,43 +1,41 @@
-md-toolbar .side-padding md-switch  {
-    display:none
+md-toolbar .side-padding md-switch {
+  display: none;
 }
 
-md-toolbar .side-padding .main-search-label  {
-    display:none;
+md-toolbar .side-padding .main-search-label {
+  display: none;
 }
 
 md-toolbar .side-padding locations-filter {
-    /* display:none; */
+  /* display:none; */
 }
 
 md-toolbar .side-padding .hidden-xs span {
-    color: #1C1C1C
+  color: #1c1c1c;
 }
 
-
-md-toolbar .side-padding .toolbar-icon  {
-    color: #1C1C1C;
+md-toolbar .side-padding .toolbar-icon {
+  color: #1c1c1c;
 }
 
-.locations-filter  {
-    border: 1px solid #b6b6b6;
-    border-radius: 9px;
-    height: 34px;
-    margin-top: 20px;
-    padding: 0 !important;
+.locations-filter {
+  border: 1px solid #b6b6b6;
+  border-radius: 9px;
+  height: 34px;
+  margin-top: 20px;
+  padding: 0 !important;
 }
 
 .locations-filter label {
-    display:none;
+  display: none;
 }
 
 locations-filter .k-input {
-
-    font-size: 14px !important;
-    opacity: 0.2 !important;
+  font-size: 14px !important;
+  opacity: 0.2 !important;
 }
 
 locations-filter .k-select {
-    font-size: 14px !important;
-    opacity: 0.2 !important;
+  font-size: 14px !important;
+  opacity: 0.2 !important;
 }
