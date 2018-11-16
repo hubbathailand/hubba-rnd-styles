@@ -28,7 +28,7 @@ gulp.task('default',function() {
 
 gulp.task('serve', function() {
   //1. serve with default settings
-  var server = gls.static(['dist']); //equals to gls.static('public', 3000);
+  var server = gls.static(['dist'], process.env.PORT || 3000); //equals to gls.static('public', 3000);
   server.start();
 
   //use gulp.watch to trigger server actions(notify, start or stop)
