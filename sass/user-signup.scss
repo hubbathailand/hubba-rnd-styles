@@ -4,15 +4,15 @@
   /*pointer-events:none;*/
 }
 
-.user-signup .plans-table > div:nth-child(8) .shop-item__footer {
+.user-signup .plans-table > div:last-child .shop-item__footer {
   display: none;
 }
 
-.user-signup .plans-table > div:nth-child(8) > div {
+.user-signup .plans-table > div:last-child > div {
   position: relative;
 }
 
-.user-signup .plans-table > div:nth-child(8) > div .external-link i {
+.user-signup .plans-table > div:last-child > div .external-link i {
   position: absolute;
   bottom: -280px;
   right: 70px;
@@ -20,7 +20,7 @@
   pointer-events: initial;
 }
 
-.user-signup .plans-table > div:nth-child(8) {
+.user-signup .plans-table > div:last-child {
   > div .external-link {
     i {
       display: none;
@@ -31,7 +31,7 @@
       white-space: nowrap;
       position: absolute;
       bottom: -275px;
-      right: 35px !important;
+      right: 0px !important;
       margin: auto;
       width: 100px;
       height: 30px;
@@ -39,6 +39,7 @@
       color: white;
       text-align: center;
       line-height: 29px;
+      border-radius: $mainRadius;
     }
   }
 }
@@ -55,7 +56,8 @@
   border-bottom: none;
 }
 
-.user-signup .signup-header-wrp .wizzard-tabs .btn-group button {
+.user-signup,
+.user-signup-plans .signup-header-wrp .wizzard-tabs .btn-group button {
   border: none;
 }
 
@@ -170,5 +172,10 @@
 }
 
 .user-signup-plans {
-  border: 1px solid red;
+  .-details {
+    img {
+      width: 70%;
+      margin: auto;
+    }
+  }
 }
