@@ -106,7 +106,8 @@ button {
 }
 
 //
-.user-signup {
+.user-signup,
+.user-signup-plans {
   form[name="accountDetailsForm"] {
     > div > div .form-group label::after {
       content: " *";
