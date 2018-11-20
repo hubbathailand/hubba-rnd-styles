@@ -1,0 +1,31 @@
+@import "./variables.scss";
+.view-billing-invoices .ng-scope {
+  .modal-dialog
+    > .form-horizontal
+    > .modal-content
+    > .modal-header
+    > .modal-title {
+    visibility: hidden;
+    margin: 0 0 0 -166px;
+    font-size: 18px;
+    &:after {
+      content: "Pay Invoice";
+      visibility: visible;
+    }
+  }
+  .view-billing-invoices .k-list-container .k-state-focused {
+    background-color: $mainColor;
+  }
+
+  .modal-dialog
+    > .form-horizontal
+    > .modal-content
+    > .modal-footer
+    > .btn-primary {
+    background-color: $mainColor;
+    border-color: $btnPrimaryBorderColor;
+    &:hover {
+      background-color: $btnPrimaryHoverColor;
+    }
+  }
+}

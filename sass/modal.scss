@@ -1,0 +1,29 @@
+@import "./variables.scss";
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 615px;
+  }
+}
+$padding: 15px 40px 15px 15px;
+
+.modal-content {
+  border-radius: 20px;
+}
+.modal-header {
+  padding: $padding;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.modal-body {
+  padding: $padding;
+  booking-dialog-view {
+    > div {
+      > div:nth-child(2) > .form-group > .col-sm-3 > a {
+        color: $mainColor;
+      }
+    }
+  }
+}
+.modal-footer {
+  padding: $padding;
+}
