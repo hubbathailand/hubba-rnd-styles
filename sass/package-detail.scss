@@ -13,6 +13,10 @@
       padding: 20px;
       border-radius: $mainRadius;
       margin-left: 10px;
+      img {
+        max-width: 70%;
+        margin: auto;
+      }
     }
   }
   .order-summary {
