@@ -3,48 +3,93 @@
   .shop-items {
     .material-info-card {
       border-radius: $mainRadius;
-      border: none;
       box-shadow: none;
       .rnd-item-picture {
         display: none;
       }
+      .shop-item__footer {
+        border-top: none;
+        small:first-child {
+          // hide per month;
+          display: none;
+        }
+      }
     }
-    .shop-item__footer {
-      border-top: none;
+    .shop-item-col {
+      // plan last child
+      &:last-child {
+        pointer-events: none;
+        .shop-item__content {
+          > .shop-item__title {
+            > .has-external-link {
+              a {
+                pointer-events: initial;
+                position: absolute;
+                top: 250px;
+                right: 0px;
+                bottom: -260px;
+                z-index: 9999;
+                left: 110px;
+              }
+              i {
+                display: none;
+              }
+              &:after {
+                content: "Inquiry";
+                font-size: 14px;
+                white-space: nowrap;
+                position: absolute;
+                bottom: -260px;
+                right: 0px !important;
+                margin: auto;
+                width: 100px;
+                height: 30px;
+                background: $mainColor;
+                color: white;
+                text-align: center;
+                line-height: 29px;
+                border-radius: $mainRadius;
+              }
+            }
+          }
+        }
+        .shop-item__footer {
+          display: none;
+        }
+      }
     }
   }
-}
-
-.plans-table + div {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  min-height: 36px;
-  min-width: 88px;
-  line-height: 36px;
-  vertical-align: middle;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-grid-row-align: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 3px;
-  box-sizing: border-box;
-  border: 0;
-  padding: 0 6px;
-  margin: 6px 8px;
-  background: transparent;
-  white-space: nowrap;
-  font-weight: 500;
-  font-size: 14px;
-  font-style: inherit;
-  font-variant: inherit;
-  font-family: inherit;
-  text-decoration: none;
-  -webkit-transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
-    background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
-    background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-  min-width: auto;
-  margin: 15px 0;
+  .plans-table + div {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    min-height: 36px;
+    min-width: 88px;
+    line-height: 36px;
+    vertical-align: middle;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: 0;
+    padding: 0 6px;
+    margin: 6px 8px;
+    background: transparent;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 14px;
+    font-style: inherit;
+    font-variant: inherit;
+    font-family: inherit;
+    text-decoration: none;
+    -webkit-transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+      background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+      background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    min-width: auto;
+    margin: 15px 0;
+  }
 }

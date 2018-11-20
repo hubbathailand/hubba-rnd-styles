@@ -1,181 +1,164 @@
 @import "./variables.scss";
-
 .user-signup .material-info-card {
-  /*pointer-events:none;*/
+    /*pointer-events:none;*/
 }
 
-.user-signup .plans-table > div:last-child .shop-item__footer {
-  display: none;
+.user-signup .plans-table>div:last-child .shop-item__footer {
+    display: none;
 }
 
-.user-signup .plans-table > div:last-child > div {
-  position: relative;
+.user-signup .plans-table>div:last-child>div {
+    position: relative;
 }
 
-.user-signup .plans-table > div:last-child > div .external-link i {
-  position: absolute;
-  bottom: -280px;
-  right: 70px;
-  font-size: 30px;
-  pointer-events: initial;
+.user-signup .plans-table>div:last-child>div .external-link i {
+    position: absolute;
+    bottom: -280px;
+    right: 70px;
+    font-size: 30px;
+    pointer-events: initial;
 }
 
-.user-signup .plans-table > div:last-child {
-  > div .external-link {
-    i {
-      display: none;
+.user-signup .plans-table>div:last-child {
+    >div .external-link {
+        i {
+            display: none;
+        }
+        &:after {
+            content: "Inquiry";
+            font-size: 14px;
+            white-space: nowrap;
+            position: absolute;
+            bottom: -275px;
+            right: 0px !important;
+            margin: auto;
+            width: 100px;
+            height: 30px;
+            background: $mainColor;
+            color: white;
+            text-align: center;
+            line-height: 29px;
+            border-radius: $mainRadius;
+        }
     }
-    &:after {
-      content: "Inquiry";
-      font-size: 14px;
-      white-space: nowrap;
-      position: absolute;
-      bottom: -275px;
-      right: 0px !important;
-      margin: auto;
-      width: 100px;
-      height: 30px;
-      background: $mainColor;
-      color: white;
-      text-align: center;
-      line-height: 29px;
-      border-radius: $mainRadius;
-    }
-  }
 }
 
 .user-signup .material-info-card button {
-  /*pointer-events:initial;*/
+    /*pointer-events:initial;*/
 }
 
 .user-signup-plans .signup-header-wrp .btn-group button {
-  border: none;
+    border: none;
 }
 
 .user-signup-plans .signup-header-wrp {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 .user-signup,
 .user-signup-plans .signup-header-wrp .wizzard-tabs .btn-group button {
-  border: none;
+    border: none;
 }
 
 .user-signup .signup-header-wrp {
-  border-bottom: none !important;
+    border-bottom: none !important;
 }
 
-.user-signup
-  .container
-  .shop-items-col
-  .form-container
-  .mb0
-  > div
-  .plans-table
-  .rnd-shop-item
-  .rnd-item-picture {
-  display: none;
+.user-signup .container .shop-items-col .form-container .mb0>div .plans-table .rnd-shop-item .rnd-item-picture {
+    display: none;
 }
 
-.user-signup
-  .container
-  .shop-items-col
-  .form-container
-  .mb0
-  > div
-  .rnd-shop-item
-  > div
-  > .shop-item__description {
-  margin: 20px 0px 45px;
+.user-signup .container .shop-items-col .form-container .mb0>div .rnd-shop-item>div>.shop-item__description {
+    margin: 20px 0px 45px;
 }
 
-.user-signup
-  .container
-  .shop-items-col
-  .form-container
-  .mb0
-  > div
-  .plans-table
-  .rnd-shop-item {
-  border-radius: $mainRadius;
-  border: 1px solid $borderColor;
-  box-shadow: none;
+.user-signup .container .shop-items-col .form-container .mb0>div .plans-table .rnd-shop-item {
+    border-radius: $mainRadius;
+    border: 1px solid $borderColor;
+    box-shadow: none;
 }
 
-.user-signup
-  .container
-  .shop-items-col
-  .form-container
-  .mb0
-  > div
-  .plans-table
-  .rnd-shop-item
-  .shop-item__content
-  > .shop-item__footer {
-  border: none;
+.user-signup .container .shop-items-col .form-container .mb0>div .plans-table .rnd-shop-item .shop-item__content>.shop-item__footer {
+    border: none;
 }
 
 .user-signup .k-list-filter input {
-  display: none;
+    display: none;
 }
 
 .user-signup .k-list-filter span {
-  display: none;
+    display: none;
 }
 
 .user-signup .login-footer .language-selector {
-  display: none;
+    display: none;
 }
 
 .user-signup .login-footer {
-  background-color: white;
+    background-color: white;
 }
 
 .user-signup .login-footer .pull-right a {
-  color: $mainColor;
+    color: $mainColor;
 }
 
 .user-signup .login-footer .language-selector {
-  display: none;
+    display: none;
 }
 
 .user-signup .login-footer {
-  background-color: white;
+    background-color: white;
 }
 
 .user-signup-plans a {
-  color: $mainColor !important;
+    color: $mainColor !important;
 }
 
 .user-signup a {
-  color: $mainColor !important;
+    color: $mainColor !important;
 }
 
 .user-signup .login-footer .pull-right a {
-  color: $mainColor !important;
+    color: $mainColor !important;
 }
 
 .user-signup-plans .login-footer {
-  background-color: white;
+    background-color: white;
 }
 
 .user-signup-plans .login-footer .language-selector {
-  display: none;
+    display: none;
 }
 
 .user-signup-plans .login-footer a {
-  color: $mainColor;
+    color: $mainColor;
 }
 
 .user-signup .k-list-container .k-state-focused {
-  background-color: $mainColor;
+    background-color: $mainColor;
 }
 
 .user-signup-plans {
-  .-details {
-    img {
-      width: 70%;
-      margin: auto;
+    .-details {
+        img {
+            width: 70%;
+            margin: auto;
+        }
     }
-  }
+}
+
+.user-signup,
+.user-signup-plans {
+    form[name="accountDetailsForm"] {
+        >div>div .form-group label::after {
+            content: " *";
+            color: $errorColor;
+        }
+        >div>div>div>.form-group:nth-child(5) {
+            display: block;
+        }
+        small {
+            display: none;
+        }
+    }
 }

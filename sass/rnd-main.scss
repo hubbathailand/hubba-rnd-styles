@@ -1,5 +1,4 @@
 @import "./variables.scss";
-
 .rnd-container > div .checkbox {
   margin-top: 0;
   margin-bottom: 0;
@@ -37,16 +36,40 @@ input {
 
 .md-raised {
   border-radius: $mainRadius;
+  background-image: linear-gradient(
+    to right,
+    $mainColor,
+    $mainColor
+  ) !important;
+  &:hover:not(:disabled) {
+    background-image: linear-gradient(to right, $mainColor, #f99e2d) !important;
+  }
+  &:disabled {
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.12),
+      rgba(0, 0, 0, 0.12)
+    ) !important;
+    &:hover {
+      background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.12),
+        rgba(0, 0, 0, 0.12)
+      ) !important; // background-ima: rgba(0, 0, 0, 0.12) !important;
+    }
+  }
 }
 
-.md-raised:hover {
-  background-color: $mainColor;
-  animation-name: example;
-  animation-duration: 1s;
-}
-
-@keyframes example {
+// @keyframes gradient {
+//     from {
+//         background: $mainColor;
+//     }
+//     to {
+//         background: linear-gradient(to right, $mainColor, #f99e2d);
+//     }
+// }
+@keyframes disabled {
   to {
-    background: linear-gradient(to right, $mainColor, #f99e2d);
+    background-color: rgba(0, 0, 0, 0.12);
   }
 }
