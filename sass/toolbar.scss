@@ -1,42 +1,42 @@
 @import "./variables.scss";
 md-toolbar .side-padding md-switch {
-  display: none;
+    display: none;
 }
 
 md-toolbar .side-padding .main-search-label {
-  display: none;
+    display: none;
 }
 
 md-toolbar .side-padding locations-filter {
-  /* display:none; */
+    /* display:none; */
 }
 
 md-toolbar .side-padding .hidden-xs span {
-  color: $mainFontColor;
+    color: $mainFontColor;
 }
 
 md-toolbar .side-padding .toolbar-icon {
-  color: $mainFontColor;
+    color: $mainFontColor;
 }
 
 .locations-filter {
-  border: 1px solid $borderColor;
-  border-radius: $mainRadius;
-  height: 34px;
-  margin-top: 20px;
-  padding: 0 !important;
+    border: 1px solid $borderColor;
+    border-radius: $mainRadius;
+    height: 34px;
+    margin-top: 20px;
+    padding: 0 !important;
 }
 
 .locations-filter label {
-  display: none;
+    display: none;
 }
 
 locations-filter .k-input {
-  font-size: 14px !important;
-  opacity: 0.2 !important;
+    font-size: 14px !important;
+    opacity: 0.2 !important;
 }
 
 locations-filter .k-select {
-  font-size: 14px !important;
-  opacity: 0.2 !important;
+    font-size: 14px !important;
+    opacity: 0.2 !important;
 }

@@ -21,15 +21,14 @@
     .row .material-info-card .date-info {
       background-color: unset;
       padding: 10px 15px 10px 0px;
-      color: #333;
-    }
-    .row .material-info-card .date-info .info-cell {
+      color: $mainFontColor;
     }
     .row .material-info-card .date-info .info-cell span {
       font-size: 20px;
     }
   }
 }
+
 .view-bookings-history {
   background-color: white !important;
   .animate-enter
@@ -40,6 +39,7 @@
     box-shadow: unset;
   }
 }
+
 .view-bookings-credits {
   background-color: white !important;
   .animate-enter
