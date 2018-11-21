@@ -1,39 +1,30 @@
 @import "./variables.scss";
 .view-billing-invoices .ng-scope {
-  .modal-dialog > .form-horizontal > .modal-content {
-    > .modal-header > .modal-title {
-      &:after {
-        content: "Pay Invoice";
-        font-size: 18px;
-        position: absolute;
-        left: 20px;
-      }
+    .modal-dialog>.form-horizontal>.modal-content {
+        >.modal-header>.modal-title {
+            font-size: 18px;
+        }
+        >.modal-body>.form-group:first-child label {
+            visibility: hidden;
+            position: relative;
+            &:after {
+                content: "Order Number";
+                visibility: visible;
+                position: absolute;
+                right: 15px;
+            }
+        }
     }
-    > .modal-body > .form-group:first-child label {
-      visibility: hidden;
-      position: relative;
-      &:after {
-        content: "Order Number";
-        visibility: visible;
-        position: absolute;
-        right: 15px;
-      }
+    .modal-dialog>.form-horizontal>.modal-content>.modal-footer>.btn-primary {
+        background-color: $mainColor;
+        border-color: $btnPrimaryBorderColor;
+        &:hover {
+            background-color: $btnPrimaryHoverColor;
+        }
     }
-  }
-  .modal-dialog
-    > .form-horizontal
-    > .modal-content
-    > .modal-footer
-    > .btn-primary {
-    background-color: $mainColor;
-    border-color: $btnPrimaryBorderColor;
-    &:hover {
-      background-color: $btnPrimaryHoverColor;
-    }
-  }
 }
 
 // dropdown color
 .k-animation-container .k-list-container div .k-list .k-state-focused {
-  background-color: $mainColor;
+    background-color: $mainColor;
 }

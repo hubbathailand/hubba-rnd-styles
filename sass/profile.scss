@@ -1,0 +1,47 @@
+@import "./variables.scss";
+.view-profile-personal {
+  md-content {
+    .layout-column {
+      background-color: white;
+      box-shadow: none;
+      > form[name="memberProfileForm"] {
+        box-shadow: none;
+        > .form-body {
+          textarea {
+            border-radius: $mainRadius;
+          }
+          .form-group {
+            a {
+              color: $mainColor;
+            }
+          }
+          .language-selector {
+            span {
+              color: $mainColor;
+              &::before {
+                color: $mainColor;
+              }
+            }
+          }
+          > .form-group {
+            button {
+              background-image: linear-gradient(
+                to right,
+                white,
+                white
+              ) !important;
+              padding: 0;
+              box-shadow: none;
+              color: $mainColor;
+              text-transform: initial;
+              font-weight: normal;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,63 +1,51 @@
 @import "./variables.scss";
-.rnd-container > div .checkbox {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: white;
+.rnd-container>div .checkbox {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
 }
 
-.rnd-container > div .checkbox input {
-  display: none;
+.rnd-container>div .checkbox input {
+    display: none;
 }
 
-.rnd-container > div .checkbox label {
-  margin-left: 0;
-  padding-left: 0;
-  color: $mainColor;
+.rnd-container>div .checkbox label {
+    margin-left: 0;
+    padding-left: 0;
+    color: $mainColor;
 }
 
-.rnd-container > div .checkbox label::before {
-  font-size: 14px;
-  content: "or ";
-  color: $mainFontColor;
+.rnd-container>div .checkbox label::before {
+    font-size: 14px;
+    content: "or ";
+    color: $mainFontColor;
 }
 
 input {
-  border-radius: $mainRadius !important;
+    border-radius: 0px !important;
 }
 
 .page-background {
-  background-color: white;
-  background-image: none !important;
+    background-color: white;
+    background-image: none !important;
 }
 
 .page-overlay {
-  background-color: white;
+    background-color: white;
 }
 
 .md-raised {
-  border-radius: $mainRadius;
-  background-image: linear-gradient(
-    to right,
-    $mainColor,
-    $mainColor
-  ) !important;
-  &:hover:not(:disabled) {
-    background-image: linear-gradient(to right, $mainColor, #f99e2d) !important;
-  }
-  &:disabled {
-    background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.12),
-      rgba(0, 0, 0, 0.12)
-    ) !important;
-    &:hover {
-      background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.12),
-        rgba(0, 0, 0, 0.12)
-      ) !important; // background-ima: rgba(0, 0, 0, 0.12) !important;
+    border-radius: $mainRadius;
+    background-image: linear-gradient( to right, $mainColor, $mainColor) !important;
+    &:hover:not(:disabled) {
+        background-image: linear-gradient(to right, $mainColor, #f99e2d) !important;
     }
-  }
+    &:disabled {
+        background-image: linear-gradient( to right, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)) !important;
+        &:hover {
+            background-image: linear-gradient( to right, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)) !important; // background-ima: rgba(0, 0, 0, 0.12) !important;
+        }
+    }
 }
 
 // @keyframes gradient {
@@ -69,7 +57,65 @@ input {
 //     }
 // }
 @keyframes disabled {
-  to {
-    background-color: rgba(0, 0, 0, 0.12);
-  }
+    to {
+        background-color: rgba(0, 0, 0, 0.12);
+    }
+}
+
+// set style date picker
+date-picker {
+    .k-picker-wrap {
+        border-radius: $mainRadius;
+        input {
+            border-top-left-radius: $mainRadius !important;
+            border-bottom-left-radius: $mainRadius !important;
+            box-shadow: none !important;
+            &:focus {
+                outline: none;
+            }
+        }
+        &.k-state-hover {
+            background-color: white !important;
+        }
+    }
+}
+
+// input in form
+.form-group {
+    input {
+        border-radius: $mainRadius !important;
+    }
+}
+
+// checkbox
+md-checkbox {
+    .md-container {
+        width: 15px;
+        height: 15px;
+        >.md-icon {
+            width: 15px;
+            height: 15px;
+            border-width: 1px;
+            &::after {
+                width: 5.66667px;
+                height: 11.33333px;
+                left: 2.66667px;
+                top: -0.77778px;
+            }
+        }
+    }
+}
+
+//dropdown
+.k-dropdown {
+    .k-dropdown-wrap {
+        border-radius: $mainRadius;
+    }
+}
+
+//tab
+.tab-menu {
+    .tab-item.active {
+        color: $mainColor;
+    }
 }

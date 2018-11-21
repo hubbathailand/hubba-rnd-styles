@@ -1,58 +1,55 @@
 @import "./variables.scss";
 .view-bookings-personal {
-  md-content {
-    .row h4 {
-      font-size: 25px;
-    }
-    .row .col-md-6 {
-      width: 25%;
-    }
-    .row .material-info-card {
-      border-radius: 15px;
-      padding: 0px 25px;
-    }
-    .row .material-info-card div .content-padding:first-child {
-      padding: 25px 20px 10px 0;
-      border-bottom: 1px solid $borderColor;
-      > .no-margin {
-        min-height: 75px;
-        .dark-link {
-          line-height: 1.5;
+    md-content {
+        .row h4 {
+            font-size: 25px;
         }
-      }
+        .row .col-md-6 {
+            width: 25%;
+        }
+        @media screen and (max-width: 768px) {
+            .row .col-md-6 {
+                width: 100%;
+            }
+        }
+        .row .material-info-card {
+            border-radius: 15px;
+            padding: 0px 25px;
+        }
+        .row .material-info-card div .content-padding:first-child {
+            padding: 25px 20px 10px 0;
+            border-bottom: 1px solid $borderColor;
+            >.no-margin {
+                min-height: 75px;
+                .dark-link {
+                    line-height: 1.5;
+                }
+            }
+        }
+        .row .material-info-card .content-padding {
+            padding: 10px 0px 20px 10px;
+        }
+        .row .material-info-card .date-info {
+            background-color: unset;
+            padding: 10px 15px 10px 0px;
+            color: $mainFontColor;
+        }
+        .row .material-info-card .date-info .info-cell span {
+            font-size: 20px;
+        }
     }
-    .row .material-info-card .content-padding {
-      padding: 10px 0px 20px 10px;
-    }
-    .row .material-info-card .date-info {
-      background-color: unset;
-      padding: 10px 15px 10px 0px;
-      color: $mainFontColor;
-    }
-    .row .material-info-card .date-info .info-cell span {
-      font-size: 20px;
-    }
-  }
 }
 
 .view-bookings-history {
-  background-color: white !important;
-  .animate-enter
-    > .content-padding
-    > .flex
-    > .layout-column
-    > .md-whiteframe-1dp {
-    box-shadow: unset;
-  }
+    background-color: white !important;
+    .animate-enter>.content-padding>.flex>.layout-column>.md-whiteframe-1dp {
+        box-shadow: unset;
+    }
 }
 
 .view-bookings-credits {
-  background-color: white !important;
-  .animate-enter
-    > .content-padding
-    > .flex
-    > .layout-column
-    > .md-whiteframe-1dp {
-    box-shadow: unset;
-  }
+    background-color: white !important;
+    .animate-enter>.content-padding>.flex>.layout-column>.md-whiteframe-1dp {
+        box-shadow: unset;
+    }
 }

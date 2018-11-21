@@ -1,29 +1,69 @@
 @import "./variables.scss";
 @media (min-width: 768px) {
-  .modal-dialog {
-    min-width: 615px;
-  }
-}
-$padding: 15px 40px 15px 15px;
-
-.modal-content {
-  border-radius: 10px;
-}
-.modal-header {
-  padding: $padding;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-.modal-body {
-  padding: $padding;
-  booking-dialog-view {
-    > div {
-      > div:nth-child(2) > .form-group > .col-sm-3 > a {
-        color: $mainColor;
-      }
+    .modal-dialog {
+        min-width: 615px;
     }
-  }
 }
+
+$padding: 15px 40px 15px 15px;
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    padding: $padding;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.modal-body {
+    padding: $padding;
+    booking-dialog-view {
+        >div {
+            >div:nth-child(2)>.form-group>.col-sm-3>a {
+                color: $mainColor;
+            }
+        }
+    }
+}
+
 .modal-footer {
-  padding: $padding;
+    padding: $padding;
+    >button.btn-primary {
+        background-color: $mainColor;
+        &:hover {
+            background-color: $mainColor !important;
+            border: 1px solid $mainColor !important;
+        }
+        &.btn-primary {
+            border: none !important;
+        }
+        &:disabled {
+            background-color: #ccc;
+        }
+    }
+}
+
+// color when focus input
+.form-control:focus {
+    border: 1px solid $mainColor;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px $mainColor !important;
+}
+
+.k-datetimepicker,
+.k-timepicker {
+    .k-picker-wrap {
+        border-radius: $mainRadius;
+        input {
+            border-top-left-radius: $mainRadius !important;
+            border-bottom-left-radius: $mainRadius !important;
+            box-shadow: none !important;
+            &:focus {
+                outline: none;
+            }
+        }
+        &.k-state-hover {
+            background-color: white !important;
+        }
+    }
 }
