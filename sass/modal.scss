@@ -1,13 +1,13 @@
 @import "./variables.scss";
 @media (min-width: 768px) {
   .modal-dialog {
-    width: 615px;
+    min-width: 615px;
   }
 }
 $padding: 15px 40px 15px 15px;
 
 .modal-content {
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .modal-header {
   padding: $padding;

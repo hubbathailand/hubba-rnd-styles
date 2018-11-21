@@ -14,6 +14,12 @@
     .row .material-info-card div .content-padding:first-child {
       padding: 25px 20px 10px 0;
       border-bottom: 1px solid $borderColor;
+      > .no-margin {
+        min-height: 75px;
+        .dark-link {
+          line-height: 1.5;
+        }
+      }
     }
     .row .material-info-card .content-padding {
       padding: 10px 0px 20px 10px;
