@@ -1,7 +1,16 @@
 @import "./variables.scss";
-
-.order-summary .remove-plan {
-  color: $mainColor;
+.order-summary {
+  .remove-plan {
+    color: $mainColor;
+  }
+  button {
+    position: relative; // position: absolute;
+    bottom: -10px;
+    left: 40px;
+  }
+  .order-summary-content {
+    position: relative;
+  }
 }
 
 .order-summary .order-summary-content {

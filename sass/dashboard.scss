@@ -2,50 +2,53 @@
 .view-dashboard-explore,
 .view-dashboard-posts,
 .view-dashboard-links {
-  .relative {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    > div:nth-child(2) {
-      width: 75%;
+    .relative {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        >div:nth-child(2) {
+            width: 75%;
+        }
+        >button {
+            display: none;
+        }
     }
-    > button {
-      display: none;
-    }
-  }
 }
 
 .view-dashboard-posts,
 .view-dashboard-links {
-  .relative {
-    > div:nth-child(2) {
-      display: none;
+    .relative {
+        >div:nth-child(2) {
+            display: none;
+        }
     }
-  }
 }
 
 .widget {
-  .image-container {
-    background-color: white;
-    > .cover-photo {
-      background-color: white;
+    .image-container {
+        background-color: white;
+        >.cover-photo {
+            background-color: white;
+        }
+        >.image-text h2 {
+            color: $mainFontColor !important;
+        }
     }
-    > .image-text h2 {
-      color: $mainFontColor !important;
+    .new-tab-menu {
+        >.tab-item {
+            border: none;
+            &:hover {
+                color: $mainColor;
+            }
+            &.md-accent {
+                // tab actice
+                border-radius: 0px;
+                border-bottom: 2px solid $mainColor;
+                border-right: none;
+                border-left: none;
+                background-image: linear-gradient(to right, white, white) !important;
+                color: $mainFontColor;
+            }
+        }
     }
-  }
-  .new-tab-menu {
-    > .tab-item {
-      border: none;
-      &.md-accent {
-        // tab actice
-        border-radius: 0px;
-        border-bottom: 2px solid $mainColor;
-        border-right: none;
-        border-left: none;
-        background-image: linear-gradient(to right, white, white) !important;
-        color: $mainFontColor;
-      }
-    }
-  }
 }

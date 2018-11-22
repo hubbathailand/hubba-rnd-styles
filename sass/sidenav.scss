@@ -1,50 +1,57 @@
+@import "./variables";
 .md-sidenav-left {
-  box-shadow: none;
+    box-shadow: none;
 }
 
 md-sidenav {
-  .md-toolbar-tools {
-    button {
-      display: none;
-    }
-  }
-  md-toolbar {
     .md-toolbar-tools {
-      display: flex;
-      justify-content: center;
-      a {
-        img {
-          max-height: 20px;
+        button {
+            display: none;
         }
-      }
     }
-  }
-  > md-divider {
-    display: none;
-  }
+    md-toolbar {
+        .md-toolbar-tools {
+            display: flex;
+            justify-content: center;
+            a {
+                img {
+                    max-height: 20px;
+                }
+            }
+        }
+    }
+    >md-divider {
+        display: none;
+    }
+    .navbar-button {
+        &:hover {
+            color: $mainColor;
+        }
+    }
 }
 
 md-toolbar {
-  border-bottom: 1px solid #aaa;
-  box-shadow: none;
-  .main-searchbox-container {
-    display: none;
-  }
-  span {
-    span {
-      display: none;
+    border-bottom: 1px solid #aaa;
+    box-shadow: none;
+    .main-searchbox-container {
+        display: none;
     }
-  }
+    span {
+        span {
+            display: none;
+        }
+    }
 }
 
 .md-whiteframe-2dp {
-  box-shadow: none;
+    box-shadow: none;
 }
 
 md-sidenav .sidenav-footer {
-  display: none;
+    display: none;
 }
 
 md-sidenav md-content {
-  margin-top: 40px;
+    padding-top: 40px;
+    background-color: white;
 }

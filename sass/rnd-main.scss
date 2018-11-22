@@ -48,18 +48,15 @@ input {
     }
 }
 
-// @keyframes gradient {
-//     from {
-//         background: $mainColor;
-//     }
-//     to {
-//         background: linear-gradient(to right, $mainColor, #f99e2d);
-//     }
-// }
 @keyframes disabled {
     to {
         background-color: rgba(0, 0, 0, 0.12);
     }
+}
+
+//strong
+strong {
+    font-weight: 600;
 }
 
 // set style date picker
@@ -76,6 +73,34 @@ date-picker {
         }
         &.k-state-hover {
             background-color: white !important;
+        }
+    }
+}
+
+.k-calendar {
+    .k-header {
+        a {
+            color: $mainFontColor !important;
+        }
+    }
+    table {
+        a {
+            color: $mainFontColor !important;
+        }
+        .k-state-selected {
+            background-color: $mainColor;
+            box-shadow: none;
+            a {
+                color: white !important;
+            }
+        }
+        .k-state-focused {
+            box-shadow: inset 0 0 7px 0 $mainColor;
+        }
+    }
+    .k-footer {
+        a {
+            color: $mainFontColor !important;
         }
     }
 }
@@ -117,5 +142,53 @@ md-checkbox {
 .tab-menu {
     .tab-item.active {
         color: $mainColor;
+    }
+}
+
+// link
+a.dark-link {
+    font-weight: 600;
+    &:hover {
+        color: $mainColor;
+    }
+}
+
+// tag status
+span.label-status {
+    border-radius: $mainRadius;
+}
+
+// all background
+.layout-column {
+    background-color: $backgroundColor;
+}
+
+//button
+.md-button.md-default-theme.md-raised[ disabled],
+.md-button.md-raised[disabled],
+.md-button.md-default-theme.md-fab[disabled],
+.md-button.md-fab[disabled] {
+    background-color: $disableColor;
+    background-image: none !important;
+    color: white;
+}
+
+.btn {
+    border-radius: $mainRadius;
+}
+
+.k-scheduler {
+    .k-scheduler-toolbar {
+        a,
+        span {
+            color: $mainColor;
+        }
+        .k-state-selected {
+            background-color: $mainColor;
+            border: 1px solid $mainColor;
+            a {
+                color: white;
+            }
+        }
     }
 }
