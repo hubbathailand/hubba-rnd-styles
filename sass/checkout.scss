@@ -1,3 +1,10 @@
+@import "./variables";
 .checkout {
-  border: 1px solid red;
+    select {
+        border-radius: $mainRadius;
+        -webkit-appearance: none;
+    }
+    .rnd-resource-item {
+        border-radius: $mainRadius;
+    }
 }
