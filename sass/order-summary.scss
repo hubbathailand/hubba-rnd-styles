@@ -1,18 +1,25 @@
 @import "./variables.scss";
 .order-summary {
-  .remove-plan {
-    color: $mainColor;
-  }
-  button {
-    position: relative; // position: absolute;
-    bottom: -10px;
-    left: 40px;
-  }
-  .order-summary-content {
-    position: relative;
-  }
+    .remove-plan {
+        color: $mainColor;
+    }
+    button {
+        position: relative; // position: absolute;
+        bottom: -10px;
+        left: 40px;
+    }
+    .order-summary-content {
+        position: relative;
+    }
+    order-summary {
+        .no-items-section {
+            color: $mainFontColor;
+            opacity: 0.5;
+            font-size: 1em;
+        }
+    }
 }
 
 .order-summary .order-summary-content {
-  border-radius: $mainRadius;
+    border-radius: $mainRadius;
 }

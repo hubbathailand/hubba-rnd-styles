@@ -164,7 +164,7 @@ span.label-status {
 }
 
 //button
-.md-button.md-default-theme.md-raised[ disabled],
+.md-button.md-default-theme.md-raised[disabled],
 .md-button.md-raised[disabled],
 .md-button.md-default-theme.md-fab[disabled],
 .md-button.md-fab[disabled] {
@@ -190,5 +190,39 @@ span.label-status {
                 color: white;
             }
         }
+    }
+}
+
+// POPUP MENU
+.md-open-menu-container {
+    md-menu-content {
+        border-radius: $mainRadius;
+    }
+    border-radius: $mainRadius;
+    md-menu-item {
+        &:hover {
+            a {
+                color: $mainColor;
+            }
+        }
+    }
+    .menu-item-footer {
+        a {
+            color: $mainColor;
+        }
+    }
+}
+
+.k-list {
+    .k-state-selected {
+        background-color: $mainColor !important;
+        color: white;
+    }
+    .k-state-focused {
+        background-color: $mainColor !important;
+        color: white;
+    }
+    .k-state-hover {
+        color: $mainFontColor;
     }
 }

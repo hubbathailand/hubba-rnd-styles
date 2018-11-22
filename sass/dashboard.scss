@@ -51,4 +51,19 @@
             }
         }
     }
+    .container-fluid {
+        .circle-button-container {
+            i {
+                border: 2px solid #e8e8e8;
+            }
+        }
+    }
+}
+
+dynamic-directive {
+    .label-block {
+        strong {
+            color: $mainColor;
+        }
+    }
 }
