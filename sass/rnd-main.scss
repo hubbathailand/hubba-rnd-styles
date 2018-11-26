@@ -213,6 +213,16 @@ span.label-status {
     }
 }
 
+.k-state-selected {
+    background-color: $mainColor !important;
+    color: white;
+    border: 1px solid $mainColor;
+}
+
+// .k-state-hover {
+    //     border: none;
+    // }
+
 .k-list {
     .k-state-selected {
         background-color: $mainColor !important;
@@ -223,6 +233,28 @@ span.label-status {
         color: white;
     }
     .k-state-hover {
-        color: $mainFontColor;
+        color: $mainFontColor !important;
+        border: none;
     }
 }
+
+.rnd-filters {
+    // border: 1px solid red;
+    a {
+        color: $mainColor;
+    }
+}
+
+.no-items-section {
+    a {
+        color: $mainColor;
+    }
+}
+
+// .multiselect-container {
+//     border: 1px solid red;
+// }
+// input[type="checkbox"]:after {
+//     content: "";
+//     border: none !important;
+// }
