@@ -5,11 +5,16 @@
     }
     button {
         position: relative; // position: absolute;
-        bottom: -10px;
-        left: 40px;
+        bottom: 5px;
+        left: -50%;
+        transform: translateX(50%);
+        margin: 0;
     }
     .order-summary-content {
         position: relative;
+        border: 1px solid $borderColor;
+        background-color: transparent;
+        box-shadow: none;
     }
     order-summary {
         .no-items-section {
@@ -22,4 +27,8 @@
 
 .order-summary .order-summary-content {
     border-radius: $mainRadius;
+}
+
+.view-shop .order-summary table {
+    background-color: #fafafa;
 }
