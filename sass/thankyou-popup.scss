@@ -1,0 +1,16 @@
+@import "./variables";
+
+.top-consent {
+    border-radius: 9px;
+    border: 2px solid $mainColor;
+    padding: 10px;
+
+    div.row > div {
+        padding: 20px;
+
+        a {
+            color: $mainColor;
+            font-weight: 600;
+        }
+    }
+}
