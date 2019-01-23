@@ -20,7 +20,11 @@
     }
   }
   .order-summary {
-    border: 1px solid $borderColor;
+    border: none !important;
     border-radius: $mainRadius;
+
+    .form-container {
+      background: none !important;
+    }
   }
 }

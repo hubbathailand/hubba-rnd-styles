@@ -52,6 +52,10 @@ md-sidenav .sidenav-footer {
 }
 
 md-sidenav md-content {
-    padding-top: 40px;
-    background-color: white;
+  padding-top: 0;
+  background-color: white;
+}
+
+.md-sidenav-left .navbar-button {
+  border-radius: 9px;
 }
