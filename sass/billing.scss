@@ -1,30 +1,55 @@
 @import "./variables.scss";
-.view-billing-invoices .ng-scope {
-    .modal-dialog>.form-horizontal>.modal-content {
-        >.modal-header>.modal-title {
-            font-size: 18px;
+.view-billing-invoices {
+  md-content {
+    background-color: white;
+  }
+  .ng-scope {
+    .modal-dialog > .form-horizontal > .modal-content {
+      > .modal-header > .modal-title {
+        font-size: 18px;
+      }
+      > .modal-body > .form-group:first-child label {
+        visibility: hidden;
+        position: relative;
+        &:after {
+          content: "Order Number";
+          visibility: visible;
+          position: absolute;
+          right: 15px;
         }
-        >.modal-body>.form-group:first-child label {
-            visibility: hidden;
-            position: relative;
-            &:after {
-                content: "Order Number";
-                visibility: visible;
-                position: absolute;
-                right: 15px;
-            }
-        }
+      }
     }
-    .modal-dialog>.form-horizontal>.modal-content>.modal-footer>.btn-primary {
-        background-color: $mainColor;
-        border-color: $btnPrimaryBorderColor;
-        &:hover {
-            background-color: $btnPrimaryHoverColor;
-        }
+    .modal-dialog
+      > .form-horizontal
+      > .modal-content
+      > .modal-footer
+      > .btn-primary {
+      background-color: $mainColor;
+      border-color: $btnPrimaryBorderColor;
+      &:hover {
+        background-color: $btnPrimaryHoverColor;
+      }
     }
+  }
+}
+.view-billing-invoices,
+.view-billing-paymentDetails,
+.view-billing-details {
+  md-content {
+    background-color: white;
+    .layout-column {
+      background-color: white;
+      .material-info-card {
+        box-shadow: none;
+        .material-info-card-footer {
+          background-color: white;
+        }
+      }
+    }
+  }
 }
 
 // dropdown color
 .k-animation-container .k-list-container div .k-list .k-state-wizzardd {
-    background-color: $mainColor;
+  background-color: $mainColor;
 }

@@ -1,6 +1,5 @@
 @import "./variables.scss";
 .view-shop {
-
   .shop-items-col {
     margin-top: 20px;
   }
@@ -8,7 +7,7 @@
   .order-summary-col {
     margin-top: 20px;
   }
-    
+
   .shop-items {
     .material-info-card {
       border-radius: $mainRadius;
@@ -27,6 +26,10 @@
 
     .shop-item-col {
       // plan last child
+
+      > div {
+        border: 1px solid $borderColor;
+      }
       &:last-child {
         pointer-events: none;
         .shop-item__content {
