@@ -96,7 +96,15 @@
   > .shop-item__description {
   margin: 20px 0px 45px;
 }
-
+.user-signup
+  .shop-item__content
+  > .shop-item__footer
+  > .shop-item__price
+  > small
+  > .small
+  > .ng-binding:nth-child(1) {
+  display: none;
+}
 .user-signup
   .container
   .shop-items-col
@@ -195,7 +203,6 @@
       color: $errorColor;
     }
     > div > div > .form-group:nth-child(5) {
-      border: red solid 3px;
       display: none;
       margin-bottom: 0px;
     }
