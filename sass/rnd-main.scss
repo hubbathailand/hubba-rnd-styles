@@ -1,166 +1,178 @@
 @import "./variables.scss";
-.rnd-container>div .checkbox {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: white;
+.rnd-container > div .checkbox {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
 }
 
-.rnd-container>div .checkbox input {
-    display: none;
+.rnd-container > div .checkbox input {
+  display: none;
 }
 
-.rnd-container>div .checkbox label {
-    margin-left: 0;
-    padding-left: 0;
-    color: $mainColor;
+.rnd-container > div .checkbox label {
+  margin-left: 0;
+  padding-left: 0;
+  color: $mainColor;
 }
 
-.rnd-container>div .checkbox label::before {
-    font-size: 14px;
-    content: "or ";
-    color: $mainFontColor;
+.rnd-container > div .checkbox label::before {
+  font-size: 14px;
+  content: "or ";
+  color: $mainFontColor;
 }
 
 input {
-    border-radius: 0px !important;
+  border-radius: 0px !important;
 }
 
 .page-background {
-    background-color: white;
-    background-image: none !important;
+  background-color: white;
+  background-image: none !important;
 }
 
 .page-overlay {
-    background-color: white;
+  background-color: white;
 }
 
 .md-raised {
-    border-radius: $mainRadius;
-    background-image: linear-gradient( to right, $mainColor, $mainColor) !important;
-    &:hover:not(:disabled) {
-        background-image: linear-gradient(to right, $mainColor, #f99e2d) !important;
+  border-radius: $mainRadius;
+  background-image: linear-gradient(
+    to right,
+    $mainColor,
+    $mainColor
+  ) !important;
+  &:hover:not(:disabled) {
+    background-image: linear-gradient(to right, $mainColor, #f99e2d) !important;
+  }
+  &:disabled {
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.12),
+      rgba(0, 0, 0, 0.12)
+    ) !important;
+    &:hover {
+      background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.12),
+        rgba(0, 0, 0, 0.12)
+      ) !important; // background-ima: rgba(0, 0, 0, 0.12) !important;
     }
-    &:disabled {
-        background-image: linear-gradient( to right, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)) !important;
-        &:hover {
-            background-image: linear-gradient( to right, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)) !important; // background-ima: rgba(0, 0, 0, 0.12) !important;
-        }
-    }
+  }
 }
 
 @keyframes disabled {
-    to {
-        background-color: rgba(0, 0, 0, 0.12);
-    }
+  to {
+    background-color: rgba(0, 0, 0, 0.12);
+  }
 }
 
 //strong
 strong {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 // set style date picker
 date-picker {
-    .k-picker-wrap {
-        border-radius: $mainRadius;
-        input {
-            border-top-left-radius: $mainRadius !important;
-            border-bottom-left-radius: $mainRadius !important;
-            box-shadow: none !important;
-            &:focus {
-                outline: none;
-            }
-        }
-        &.k-state-hover {
-            background-color: white !important;
-        }
+  .k-picker-wrap {
+    border-radius: $mainRadius;
+    input {
+      border-top-left-radius: $mainRadius !important;
+      border-bottom-left-radius: $mainRadius !important;
+      box-shadow: none !important;
+      &:focus {
+        outline: none;
+      }
     }
+    &.k-state-hover {
+      background-color: white !important;
+    }
+  }
 }
 
 .k-calendar {
-    .k-header {
-        a {
-            color: $mainFontColor !important;
-        }
+  .k-header {
+    a {
+      color: $mainFontColor !important;
     }
-    table {
-        a {
-            color: $mainFontColor !important;
-        }
-        .k-state-selected {
-            background-color: $mainColor;
-            box-shadow: none;
-            a {
-                color: white !important;
-            }
-        }
-        .k-state-focused {
-            box-shadow: inset 0 0 7px 0 $mainColor;
-        }
+  }
+  table {
+    a {
+      color: $mainFontColor !important;
     }
-    .k-footer {
-        a {
-            color: $mainFontColor !important;
-        }
+    .k-state-selected {
+      background-color: $mainColor;
+      box-shadow: none;
+      a {
+        color: white !important;
+      }
     }
+    .k-state-focused {
+      box-shadow: inset 0 0 7px 0 $mainColor;
+    }
+  }
+  .k-footer {
+    a {
+      color: $mainFontColor !important;
+    }
+  }
 }
 
 // input in form
 .form-group {
-    input {
-        border-radius: $mainRadius !important;
-    }
+  input {
+    border-radius: $mainRadius !important;
+  }
 }
 
 // checkbox
 md-checkbox {
-    .md-container {
-        width: 15px;
-        height: 15px;
-        >.md-icon {
-            width: 15px;
-            height: 15px;
-            border-width: 1px;
-            &::after {
-                width: 5.66667px;
-                height: 11.33333px;
-                left: 2.66667px;
-                top: -0.77778px;
-            }
-        }
+  .md-container {
+    width: 15px;
+    height: 15px;
+    > .md-icon {
+      width: 15px;
+      height: 15px;
+      border-width: 1px;
+      &::after {
+        width: 5.66667px;
+        height: 11.33333px;
+        left: 2.66667px;
+        top: -0.77778px;
+      }
     }
+  }
 }
 
 //dropdown
 .k-dropdown {
-    .k-dropdown-wrap {
-        border-radius: $mainRadius;
-    }
+  .k-dropdown-wrap {
+    border-radius: $mainRadius;
+  }
 }
 
 //tab
 .tab-menu {
-    .tab-item.active {
-        color: $mainColor;
-    }
+  .tab-item.active {
+    color: $mainColor;
+  }
 }
 
 // link
 a.dark-link {
-    font-weight: 600;
-    &:hover {
-        color: $mainColor;
-    }
+  font-weight: 600;
+  &:hover {
+    color: $mainColor;
+  }
 }
 
 // tag status
 span.label-status {
-    border-radius: $mainRadius;
+  border-radius: $mainRadius;
 }
 
 // all background
 .layout-column {
-    background-color: $backgroundColor;
+  background-color: $backgroundColor;
 }
 
 //button
@@ -168,87 +180,97 @@ span.label-status {
 .md-button.md-raised[disabled],
 .md-button.md-default-theme.md-fab[disabled],
 .md-button.md-fab[disabled] {
-    background-color: $disableColor;
-    background-image: none !important;
-    color: white;
+  background-color: $disableColor;
+  background-image: none !important;
+  color: white;
 }
 
 .btn {
-    border-radius: $mainRadius;
+  border-radius: $mainRadius;
 }
 
 .k-scheduler {
-    .k-scheduler-toolbar {
-        a,
-        span {
-            color: $mainColor;
-        }
-        .k-state-selected {
-            background-color: $mainColor;
-            border: 1px solid $mainColor;
-            a {
-                color: white;
-            }
-        }
+  .k-scheduler-toolbar {
+    a,
+    span {
+      color: $mainColor;
     }
+    .k-state-selected {
+      background-color: $mainColor;
+      border: 1px solid $mainColor;
+      a {
+        color: white;
+      }
+    }
+  }
 }
 
 // POPUP MENU
 .md-open-menu-container {
-    md-menu-content {
-        border-radius: $mainRadius;
-    }
+  md-menu-content {
     border-radius: $mainRadius;
-    md-menu-item {
-        &:hover {
-            a {
-                color: $mainColor;
-            }
-        }
+  }
+  border-radius: $mainRadius;
+  md-menu-item {
+    &:hover {
+      a {
+        color: $mainColor;
+      }
     }
-    .menu-item-footer {
-        a {
-            color: $mainColor;
-        }
+  }
+  .menu-item-footer {
+    a {
+      color: $mainColor;
     }
+  }
 }
 
 .k-state-selected {
-    background-color: $mainColor !important;
-    color: white;
-    border: 1px solid $mainColor;
+  background-color: $mainColor !important;
+  color: white;
+  border: 1px solid $mainColor;
 }
 
 // .k-state-hover {
-    //     border: none;
-    // }
+//     border: none;
+// }
+.layout-column {
+  background-color: white;
+}
+
+.material-info-card {
+  box-shadow: none;
+}
+
+.content-padding {
+}
 
 .k-list {
-    .k-state-selected {
-        background-color: $mainColor !important;
-        color: white;
-    }
-    .k-state-focused {
-        background-color: $mainColor !important;
-        color: white;
-    }
-    .k-state-hover {
-        color: $mainFontColor !important;
-        border: none;
-    }
+  .k-state-selected {
+    background-color: $mainColor !important;
+    color: white;
+  }
+  .k-state-focused {
+    background-color: $mainColor !important;
+    color: white;
+  }
+  .k-state-hover {
+    color: $mainFontColor !important;
+    border: none;
+  }
 }
 
 .rnd-filters {
-    // border: 1px solid red;
-    a {
-        color: $mainColor;
-    }
+  // border: 1px solid red;
+  a {
+    color: $mainColor;
+  }
 }
 
 .no-items-section {
-    a {
-        color: $mainColor;
-    }
+  a {
+    color: $mainColor;
+  }
 }
 
 // .multiselect-container {
