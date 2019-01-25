@@ -194,6 +194,11 @@
       content: " *";
       color: $errorColor;
     }
+    > div > div > .form-group:nth-child(5) {
+      border: red solid 3px;
+      display: none;
+      margin-bottom: 0px;
+    }
     > div > div > div > .form-group:nth-child(5) {
       display: block;
     }
