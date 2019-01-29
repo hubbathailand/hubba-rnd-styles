@@ -1,4 +1,9 @@
 @import "./variables.scss";
+
+.rnd-container {
+  border-radius: $mainRadius;
+}
+
 .rnd-container > div .checkbox {
   margin-top: 0;
   margin-bottom: 0;
@@ -22,7 +27,7 @@
 }
 
 input {
-  border-radius: 0px !important;
+  border-radius: $mainRadius !important;
 }
 
 .page-background {
