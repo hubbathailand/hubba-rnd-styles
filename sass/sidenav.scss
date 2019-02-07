@@ -22,6 +22,15 @@ md-sidenav {
       }
     }
   }
+  md-content {
+    > div {
+      > a {
+        &:nth-child(2) {
+          display: none !important;
+        }
+      }
+    }
+  }
   md-divider {
     display: none;
   }
