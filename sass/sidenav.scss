@@ -1,26 +1,36 @@
 @import "./variables";
 .md-sidenav-left {
-    box-shadow: none;
+  box-shadow: none;
 }
-
+.md-divider {
+  display: none;
+}
 md-sidenav {
+  .md-toolbar-tools {
+    button {
+      display: none;
+    }
+  }
+  md-toolbar {
     .md-toolbar-tools {
-        button {
-            display: none;
+      display: flex;
+      justify-content: center;
+      a {
+        img {
+          max-height: 20px;
         }
+      }
     }
-    md-toolbar {
-        .md-toolbar-tools {
-            display: flex;
-            justify-content: center;
-            a {
-                img {
-                    max-height: 20px;
-                }
-            }
+  }
+  md-content {
+    > div {
+      > a {
+        &:nth-child(2) {
+          display: none !important;
         }
+      }
     }
-    >md-divider {
+    md-divider {
         display: none;
     }
     .navbar-button {
@@ -31,27 +41,28 @@ md-sidenav {
           display: none;
         }
     }
+  }
 }
 
 md-toolbar {
-    border-bottom: 1px solid #aaa;
-    box-shadow: none;
-    .main-searchbox-container {
-        display: none;
-    }
+  border-bottom: 1px solid #aaa;
+  box-shadow: none;
+  .main-searchbox-container {
+    display: none;
+  }
+  span {
     span {
-        span {
-            display: none;
-        }
+      display: none;
     }
+  }
 }
 
 .md-whiteframe-2dp {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 md-sidenav .sidenav-footer {
-    display: none;
+  display: none;
 }
 
 md-sidenav md-content {
@@ -61,4 +72,12 @@ md-sidenav md-content {
 
 .md-sidenav-left .navbar-button {
   border-radius: 9px;
+}
+
+.ng-transclude {
+  border: 1px solid red;
+}
+
+md-divider {
+  display: none;
 }

@@ -1,118 +1,125 @@
 @import "./variables.scss";
 .user-signin .rnd-container {
-    display: flex;
+  display: flex;
 }
 
 .user-signin .form-container {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .user-signin .rnd-container .signup-header img {
-    width: 200px;
+  width: 200px;
 }
 
 .user-signin .rnd-container .signup-header h2 {
-    display: none;
+  display: none;
 }
 
 .user-signin .rnd-container .signup-header {
-    display: flex;
-    align-items: center;
-    padding: 0px 35px;
-    border-right: 1px solid $borderColor;
+  display: flex;
+  align-items: center;
+  padding: 0px 35px;
+  border-right: 1px solid $borderColor;
 }
 
 .user-signin .rnd-container form {
-    width: 100%;
+  width: 100%;
 }
 
 .user-signin .rnd-container form::before {
-    content: "Hi, welcome to HUBBA.";
-    display: flex;
-    justify-content: center;
-    font-size: 18px;
-    padding-bottom: 15px;
+  content: "Hi, welcome to HUBBA.";
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  padding-bottom: 15px;
 }
 
 .user-signin .rnd-container form label {
-    display: none;
+  display: none;
 }
 
-.user-signin form>div:first-child .form-group>div {
-    width: 100%;
+.user-signin form > div:first-child .form-group > div {
+  width: 100%;
 }
 
 .user-signin .login-footer {
-    background-color: white;
-    border: none;
+  background-color: white;
+  border: none;
 }
 
 .user-signin a {
-    color: $mainColor;
-    font-size: 14px;
+  color: $mainColor;
+  font-size: 14px;
 }
 
 .user-signin .login-footer .pull-right {
-    position: absolute;
-    top: 310px;
-    right: 130px;
+  position: absolute;
+  top: 310px;
+  right: 130px;
+  font-size: 14px;
 }
 
 .user-signin .login-footer .pull-right span {
-    display: none;
+  display: none;
 }
 
 .user-signin form a.inline {
+  position: absolute;
+  bottom: -85px;
+  right: 70px;
+}
+@media (max-width: 768px) {
+  .user-signin form a.inline {
     position: absolute;
-    bottom: -85px;
-    right: 70px;
+    bottom: -110px !important;
+  }
 }
 
 @media (max-width: 460px) {
   .user-signin form a.inline {
     position: absolute;
-    bottom: -75px;
+    bottom: -140px !important;
     right: auto !important;
   }
 }
 
 .user-signin .container {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .user-signin .language-selector {
-    display: none;
+  display: none;
 }
 
 .user-signin .login-footer .pull-right a {
-    visibility: hidden;
-    position: relative;
+  visibility: hidden;
+  position: relative;
 }
 
 .user-signin .login-footer .pull-right a::after {
-    visibility: visible;
-    position: absolute;
-    top: -2px;
-    left: 0;
-    content: " join our community";
-    white-space: nowrap;
-    font-size: 14px;
+  visibility: visible;
+  position: absolute;
+  top: 0px;
+  left: 2px;
+  content: " join our community";
+  white-space: nowrap;
+  font-size: 14px;
 }
 
 .user-signin input,
 button {
-    border-radius: $mainRadius;
+  border-radius: $mainRadius;
 }
 
 .user-signin button {
-    border-radius: $mainRadius;
+  border-radius: $mainRadius;
 }
 
 .user-signin validation-errors {
-    white-space: nowrap;
-    margin-left: 40px;
+  white-space: nowrap;
+  margin-left: 40px;
 }
 
 @media (max-width: 460px) {

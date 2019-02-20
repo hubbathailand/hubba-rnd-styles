@@ -1,6 +1,5 @@
 @import "./variables.scss";
 .view-shop {
-
   .shop-items-col {
     margin-top: 20px;
   }
@@ -27,6 +26,10 @@
 
     .shop-item-col {
       // plan last child
+
+      > div {
+        border: 1px solid $borderColor;
+      }
       &:last-child {
         .shop-item__content {
           > .shop-item__title {
