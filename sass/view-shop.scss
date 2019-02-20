@@ -8,7 +8,7 @@
   .order-summary-col {
     margin-top: 20px;
   }
-    
+
   .shop-items {
     .material-info-card {
       border-radius: $mainRadius;
@@ -28,7 +28,6 @@
     .shop-item-col {
       // plan last child
       &:last-child {
-        pointer-events: none;
         .shop-item__content {
           > .shop-item__title {
             > .has-external-link {
