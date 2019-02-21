@@ -37,9 +37,6 @@ md-sidenav {
         &:hover {
             color: $mainColor;
         }
-        &[ui-sref="app.bookings"] {
-          display: none;
-        }
     }
   }
 }

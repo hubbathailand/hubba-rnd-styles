@@ -14,13 +14,13 @@
         }
     }
 
-    div[role="main"] {
-      md-content {
-        ui-view > div > div > div > div {
-          width: 100% !important
-        }
-      }
-    }
+    // div[role="main"] {
+    //   md-content {
+    //     ui-view > div > div > div > div {
+    //       width: 100% !important
+    //     }
+    //   }
+    // }
 }
 
 .view-dashboard-posts,
@@ -81,6 +81,9 @@ dynamic-directive {
     .row.center-content-horizontally {
       width: 60%;
       margin: auto;
+      a[ui-sref="app.calendar"] {
+        display: none;
+      }
     }
   }
 }
