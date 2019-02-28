@@ -215,16 +215,44 @@
   }
 }
 
-.user-signup #credit-card-input {
-  .form-inline .form-group {
-    margin-right: 5px;
-  }
-  @media (min-width: 768px){
-    .col-sm-1 {
-      width: 8%;
+.user-signup,
+.user-signup-plans {
+  #credit-card-input {
+    .form-inline .form-group {
+      margin-right: 5px;
     }
-    .col-sm-2 {
-      width: 14%;
+    @media (min-width: 768px){
+      .col-sm-1 {
+        width: 8%;
+      }
+      .col-sm-2 {
+        width: 14%;
+      }
     }
   }
 }
+
+.user-signup,
+.user-signup-plans {
+  form[name="paymentDetailsForm"] {
+    div.checkbox {
+      display: none;
+    }
+    div.form-group.form-group-element label {
+      span {
+        display: none;
+      }
+      & > input {
+        position: relative;
+        &::after {
+          content: "need tax invoice? please provide address.";
+          white-space: nowrap;
+          padding-left: 19px;
+          position: absolute;
+          top: -5px;
+        }
+      }
+    }
+  }
+}
+
