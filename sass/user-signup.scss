@@ -214,3 +214,17 @@
     }
   }
 }
+
+.user-signup #credit-card-input {
+  .form-inline .form-group {
+    margin-right: 5px;
+  }
+  @media (min-width: 768px){
+    .col-sm-1 {
+      width: 8%;
+    }
+    .col-sm-2 {
+      width: 14%;
+    }
+  }
+}
