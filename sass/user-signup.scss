@@ -47,6 +47,11 @@
   border: none;
 }
 
+.user-signup .signup-header-wrp .wizzard-tabs .btn-group button.md-button:disabled, .user-signup-plans .signup-header-wrp .wizzard-tabs .btn-group button.md-button:disabled {
+  color: #1c1c1c !important;
+  opacity: 1 !important;
+}
+
 .user-signup-plans .signup-header-wrp {
   border-bottom: none;
 }
@@ -212,5 +217,21 @@
     small {
       display: none;
     }
+  }
+}
+
+.user-signup {
+  .shop-item__content {
+    > .shop-item__title {
+      height: 30px !important;
+    }
+  }
+  .shop-item__price {
+    small:nth-child(1) {
+      display: block !important;
+    }
+  }
+  table > tbody:nth-child(1) > tr > td {
+    text-align: left !important;
   }
 }
