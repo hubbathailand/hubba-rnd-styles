@@ -220,7 +220,7 @@
   }
 }
 
-.user-signup {
+.user-signup, .user-signup-plans {
   .shop-item__content {
     > .shop-item__title {
       height: 30px !important;
@@ -231,8 +231,26 @@
       display: block !important;
     }
   }
-  table > tbody:nth-child(1) > tr > td {
+  table {
+    margin-bottom: 0;
+  }
+  table > tbody[ng-repeat="plan in plans"] > tr > td {
     text-align: left !important;
+  }
+  table > tbody > tr[ng-hide^="plan.intervalLength"] > td {
+    text-align: right !important;
+  }
+  table > tbody:not(first-child) > tr:nth-child(1) > td {
+    padding-top: 10px;
+  }
+  date-picker.ml5 {
+    margin-left: 0 !important;
+  }
+  .order-summary .remove-plan {
+    margin-left: -25px;
+  }
+  .small-footer-text {
+    display: none;
   }
 }
 
@@ -275,4 +293,4 @@
       }
     }
   }
-}  
+}
